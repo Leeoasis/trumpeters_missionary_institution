@@ -112,7 +112,7 @@ function HomePage() {
         <img className="home-hero-image" src={photos.outreachTeam.src} alt={photos.outreachTeam.alt} />
         <div className="home-hero-shade" />
         <div className="home-hero-copy">
-          <span className="hero-kicker"><span /> CALLED TO SERVE. EQUIPPED TO HEAL.</span>
+          <span className="hero-kicker"><span /> WELCOME TO TRUMPETERS</span>
           <h1>Health is a gift.<br />Sharing it is a <em>calling.</em></h1>
           <p>We equip people to share practical health education and Christian hope through compassionate community service. Everyone can play a part—no medical training required to get started.</p>
           <div className="hero-actions">
@@ -171,23 +171,56 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="About the ministry"
-        title={<>Care for the whole person.<br /><em>Serve with faith.</em></>}
-        description="Trumpeters Missionary Institution exists to invite, train, equip, and mobilise medical missionaries for health and gospel work."
+        title={<>Sharing health.<br /><em>Living the gospel.</em></>}
+        description="We are a Christian medical missionary ministry helping people learn, serve, and bring practical health education and the hope of Jesus to their communities."
         photo={photos.outreachTeam}
       />
       <section className="page-content content-wrap">
-        <div className="story-grid">
-          <div>
-            <SectionTitle eyebrow="Our purpose" title="Health ministry rooted in hope" />
-            <p>We believe practical health education and loving service can help strengthen individuals and communities. Our work brings people together to learn, care for one another, and share the hope of the gospel.</p>
-            <p>Medical missionary work can include health expos, prayer, cooking, music, transport, children’s activities, and many other gifts. You do not need to be a clinician to begin serving.</p>
+        <div className="about-introduction">
+          <div className="about-introduction-copy">
+            <SectionTitle eyebrow="Who we are" title="Faith expressed through practical care" />
+            <p>Trumpeters Missionary Institution brings people together around a simple conviction: caring for our neighbours’ wellbeing is one way we can serve them with the love of Christ.</p>
+            <p>Our work connects Christian faith with practical health education, community outreach, prayer, and service. We welcome people with different skills and levels of experience; many important roles do not require medical training.</p>
           </div>
-          <div className="scripture-card"><Cross size={23} /><blockquote>“I am come that they might have life, and that they might have it more abundantly.”</blockquote><span>JOHN 10:10 · KJV</span></div>
+          <div className="about-verse-card">
+            <Cross size={23} />
+            <span className="eyebrow eyebrow--light">Our inspiration · John 10:10</span>
+            <blockquote>“I am come that they might have life, and that they might have it more abundantly.”</blockquote>
+            <span className="verse-translation">KING JAMES VERSION</span>
+          </div>
         </div>
+
+        <section className="mission-vision-section">
+          <SectionTitle eyebrow="Our direction" title="A clear purpose. A shared vision." />
+          <div className="mission-vision-grid">
+            <article><span className="mission-vision-label">OUR MISSION</span><h3>Invite. Train. Equip. Mobilise.</h3><p>To invite, train, equip, and mobilise medical missionaries to serve communities through health and gospel work.</p></article>
+            <article><span className="mission-vision-label">OUR VISION</span><h3>Health and hope in every community.</h3><p>To see people equipped to live healthier lives and to share the love of Jesus through compassionate, practical service.</p></article>
+          </div>
+        </section>
+
+        <section className="bible-foundation">
+          <div className="bible-foundation-heading">
+            <span className="eyebrow">Our Bible foundation</span>
+            <h2>Faith is the heart<br /><em>of the mission.</em></h2>
+            <p>We look to the example of Jesus, who met people with compassion, cared for their needs, and invited them into abundant life.</p>
+          </div>
+          <div className="scripture-list">
+            <article><span>MATTHEW 9:35</span><p>Jesus taught, preached the gospel, and healed among the people.</p></article>
+            <article><span>3 JOHN 1:2</span><p>A prayer for wellbeing in body as well as soul.</p></article>
+            <article><span>GALATIANS 6:2</span><p>“Bear ye one another’s burdens.”</p></article>
+          </div>
+        </section>
+
         <div className="about-image-row">
           <img src={photos.outreachTeam.src} alt={photos.outreachTeam.alt} loading="lazy" />
-          <div><span className="eyebrow">Many gifts, one purpose</span><h2>Every willing heart<br /><em>has a place.</em></h2><p>This Cross Roads outreach photo shows the kind of community work behind the ministry. Health checks, cooking, hospitality, prayer, transport, and children’s activities all need caring people.</p><Link className="text-link" to="/get-involved">Find a way to serve <ArrowRight size={15} /></Link></div>
+          <div><span className="eyebrow">Meet the people behind the work</span><h2>A community<br /><em>ready to serve.</em></h2><p>This is the Cross Roads outreach team featured in the ministry’s health expo flyer. Team members’ names and individual roles were not provided, so we have not guessed them. The wider mission also needs people who welcome guests, prepare meals, pray, provide transport, support children, and share learning resources.</p><Link className="text-link" to="/get-involved">Explore volunteer roles <ArrowRight size={15} /></Link></div>
         </div>
+
+        <section className="about-outreach-story">
+          <div><span className="eyebrow">A glimpse of the work</span><h2>Health education,<br /><em>shared face to face.</em></h2></div>
+          <div><p>The Cross Roads health expo flyer invites the local community to free health checks, including blood pressure, weight, lung capacity, glucose, and body fat. It reflects the ministry’s practical approach: create a welcoming space, share useful health information, and treat every visitor with dignity.</p><Link className="text-link" to="/events">Explore health expo information <ArrowRight size={15} /></Link></div>
+        </section>
+
         <section className="faq-section">
           <SectionTitle eyebrow="New here?" title="A few helpful answers" description="If you still have questions, the ministry team can share current details." />
           <div className="faq-list">

@@ -24,6 +24,7 @@ import {
 } from './pages.jsx'
 
 const navigation = [
+  { label: 'Home', to: '/', end: true },
   { label: 'About', to: '/about' },
   { label: 'Get involved', to: '/get-involved' },
   { label: 'Learn', to: '/learn' },
@@ -46,7 +47,7 @@ const searchPages = [
 ]
 
 const pageMetadata = {
-  '/': ['Welcome', 'Meet Trumpeters Missionary Institution and discover health outreach, Christian service, and ways to get involved.'],
+  '/': ['Home', 'Meet Trumpeters Missionary Institution and discover health outreach, Christian service, and ways to get involved.'],
   '/about': ['About our mission', 'Learn about Trumpeters Missionary Institution, its Christian foundation, and community health outreach.'],
   '/get-involved': ['Get involved', 'Explore volunteer roles and contact the ministry about serving at community health outreaches.'],
   '/learn': ['Learn and grow', 'Explore the Eight Laws of Health, Bible studies, and practical educational resources.'],
@@ -96,7 +97,7 @@ function SiteHeader() {
         </button>
         <nav className={`main-nav${menuOpen ? ' main-nav--open' : ''}`} aria-label="Main navigation">
           {navigation.map((item) => (
-            <NavLink key={item.to} to={item.to} className={({ isActive }) => isActive ? 'active' : ''}>
+            <NavLink key={item.to} to={item.to} end={item.end} className={({ isActive }) => isActive ? 'active' : ''}>
               {item.label}
             </NavLink>
           ))}
