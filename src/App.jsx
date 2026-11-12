@@ -47,8 +47,8 @@ const searchPages = [
 ]
 
 const pageMetadata = {
-  '/': ['Home', 'Meet Trumpeters Missionary Institution and discover health outreach, Christian service, and ways to get involved.'],
-  '/about': ['About our mission', 'Learn about Trumpeters Missionary Institution, its Christian foundation, and community health outreach.'],
+  '/': ['Home', 'A Bible-centered medical missionary ministry sharing practical health education and the hope of Jesus through community outreach.'],
+  '/about': ['About our medical missionary ministry', 'Learn what medical missionary work means at Trumpeters: whole-person health education, Christian service, community outreach, and the Bible foundation.'],
   '/get-involved': ['Get involved', 'Explore volunteer roles and contact the ministry about serving at community health outreaches.'],
   '/learn': ['Learn and grow', 'Explore the Eight Laws of Health, Bible studies, and practical educational resources.'],
   '/events': ['Events and health expos', 'Learn about health expo outreach, volunteer preparation, prayer, fasting, and training activities.'],
