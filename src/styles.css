@@ -380,6 +380,7 @@ button { color: inherit; }
 .home-practice-grid h3 { margin: 14px 0 7px; color: var(--navy); font-family: var(--serif); font-size: 20px; font-weight: 500; }
 .home-practice-grid p { min-height: 55px; margin: 0 0 12px; color: #718078; font-size: 9px; line-height: 1.7; }
 .home-practice-grid .text-link { font-size: 9px; }
+.home-practice-grid article { min-height: 238px; }
 .home-expo-section { padding-top: 76px; padding-bottom: 76px; display: grid; grid-template-columns: .75fr 1fr; align-items: center; gap: 8%; }
 .home-expo-section > img { display: block; width: 100%; max-height: 430px; object-fit: contain; background: #e8ebe2; }
 .home-expo-section h2 { margin: 13px 0; color: var(--navy); font-family: var(--serif); font-size: clamp(32px, 4vw, 43px); font-weight: 500; line-height: 1.18; }
@@ -429,6 +430,22 @@ button { color: inherit; }
 .about-outreach-story h2 { margin: 10px 0 0; color: var(--navy); font-family: var(--serif); font-size: 29px; font-weight: 500; line-height: 1.25; }
 .about-outreach-story h2 em { color: var(--green); }
 .about-outreach-story p { margin: 0 0 12px; color: #718078; font-size: 10px; line-height: 1.85; }
+.about-training-section { margin: 49px 0 56px; padding: 29px; background: #efefe5; }
+.about-training-heading { max-width: 700px; }
+.about-training-heading h2, .activities-overview h2 { margin: 11px 0; color: var(--navy); font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1.2; }
+.about-training-heading h2 em, .activities-overview h2 em { color: var(--green); }
+.about-training-heading > p, .activities-overview > div > p { color: #718078; font-size: 10px; line-height: 1.8; }
+.about-training-grid { margin-top: 21px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.about-training-grid article { padding: 16px; background: #fbfbf6; color: var(--green); }
+.about-training-grid h3 { margin: 10px 0 5px; color: var(--navy); font-family: var(--serif); font-size: 17px; font-weight: 500; }
+.about-training-grid p { margin: 0; color: #718078; font-size: 9px; line-height: 1.7; }
+.training-caution { margin: 13px 0 0; color: #65756a; font-size: 9px; line-height: 1.7; }
+.learn-training-grid { margin: 0 0 10px; }
+.activities-overview { margin: 48px 0; padding: 27px; display: grid; grid-template-columns: 1fr .8fr; align-items: center; gap: 8%; background: #efefe5; }
+.activities-overview h2 { font-size: 30px; }
+.activities-training-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.activities-training-list span { display: flex; align-items: center; gap: 8px; padding: 11px; background: #fbfbf6; color: var(--navy); font-size: 9px; }
+.activities-training-list svg { flex: 0 0 auto; color: var(--green); }
 .medical-missionary-section { margin: 22px 0 58px; padding: 32px; background: #efefe5; }
 .medical-missionary-heading { max-width: 720px; }
 .medical-missionary-heading h2 { margin: 11px 0; color: var(--navy); font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1.2; }
@@ -617,6 +634,13 @@ button { color: inherit; }
   .medical-missionary-heading h2 { font-size: 30px; }
   .medical-missionary-grid { grid-template-columns: 1fr; gap: 8px; }
   .medical-missionary-grid article { padding: 15px; }
+  .about-training-section { margin: 37px 0 43px; padding: 20px; }
+  .about-training-heading h2, .activities-overview h2 { font-size: 30px; }
+  .about-training-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .about-training-grid article { padding: 13px; }
+  .about-training-grid h3 { font-size: 16px; }
+  .activities-overview { grid-template-columns: 1fr; gap: 18px; padding: 19px; }
+  .activities-training-list { gap: 7px; }
   .home-hero-copy > p { font-size: 11px; }
   .home-hero-caption { right: 6%; bottom: 20px; max-width: 190px; text-align: right; font-size: 6px; }
   .home-mission { padding-top: 53px; padding-bottom: 53px; grid-template-columns: 1fr; gap: 14px; }

@@ -47,11 +47,11 @@ const searchPages = [
 ]
 
 const pageMetadata = {
-  '/': ['Home', 'A Bible-centered medical missionary ministry sharing practical health education and the hope of Jesus through community outreach.'],
-  '/about': ['About our medical missionary ministry', 'Learn what medical missionary work means at Trumpeters: whole-person health education, Christian service, community outreach, and the Bible foundation.'],
+  '/': ['Home', 'A Seventh-day Adventist medical missionary ministry offering lifestyle-health training, Bible learning, prayer, missionary camp, and community outreach.'],
+  '/about': ['About our Adventist medical missionary ministry', 'Discover Trumpeters Missionary Institution: Adventist faith grounded in the Bible and informed by Ellen G. White, with practical lifestyle-health training, prayer, missionary camp, and service.'],
   '/get-involved': ['Get involved', 'Explore volunteer roles and contact the ministry about serving at community health outreaches.'],
-  '/learn': ['Learn and grow', 'Explore the Eight Laws of Health, Bible studies, and practical educational resources.'],
-  '/events': ['Events and health expos', 'Learn about health expo outreach, volunteer preparation, prayer, fasting, and training activities.'],
+  '/learn': ['Lifestyle-health training', 'Learn about nutrition, hydrotherapy, massage therapy, cooking and baking lessons, the Eight Laws of Health, and Bible learning.'],
+  '/events': ['Training and missionary activities', 'Discover twice-weekly online lessons, selected Sunday training, regular hikes and all-night prayers, the annual one-week missionary camp, and health expos.'],
   '/community': ['Community and prayer', 'Connect with the men’s prayer and fasting group and contact the ministry with a private prayer request.'],
   '/give': ['Give and partner', 'Learn how to ask the ministry about secure giving and current outreach needs.'],
   '/members': ['Member connections', 'Request current ministry group links, announcements, and member resources.'],

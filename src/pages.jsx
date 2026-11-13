@@ -48,23 +48,42 @@ const laws = [
 
 const eventTypes = [
   {
-    category: 'Prayer & fasting',
-    title: 'Wednesday prayer and fasting',
-    detail: 'A midweek rhythm for prayer, reflection, and fellowship.',
-    icon: Heart,
-  },
-  {
-    category: 'Book club',
-    title: 'A chapter a week',
-    detail: 'Read, reflect, and discuss together as a community.',
+    category: 'Online learning · twice weekly',
+    title: 'Online lessons',
+    detail: 'Join regular online teaching as part of an ongoing learning and preparation rhythm.',
     icon: BookOpen,
   },
   {
-    category: 'Training & outreach',
-    title: 'Health expo training',
-    detail: 'Get equipped to serve at a community health expo.',
+    category: 'In-person training · selected Sundays',
+    title: 'Sunday training',
+    detail: 'Meet on certain Sundays for practical instruction, shared learning, and fellowship.',
+    icon: UsersRound,
+  },
+  {
+    category: 'Annual gathering',
+    title: 'One-week missionary camp',
+    detail: 'Set aside a week each year for focused missionary learning, training, and spiritual growth.',
+    icon: HeartHandshake,
+  },
+  {
+    category: 'Regular community activities',
+    title: 'Hikes & all-night prayers',
+    detail: 'Take part in regular hikes and gatherings for all-night prayer. Contact the team for upcoming arrangements.',
+    icon: Heart,
+  },
+  {
+    category: 'Community outreach',
+    title: 'Health expos',
+    detail: 'Share practical health information and support community health checks as part of a trained team.',
     icon: Stethoscope,
   },
+]
+
+const practicalTraining = [
+  { title: 'Nutrition', detail: 'Learn practical principles for nourishing food and everyday wellbeing.', icon: Leaf },
+  { title: 'Hydrotherapy', detail: 'Receive instruction in the ministry’s hydrotherapy training.', icon: Waves },
+  { title: 'Massage therapy', detail: 'Build knowledge through guided massage-therapy lessons.', icon: Heart },
+  { title: 'Cooking & baking', detail: 'Develop hands-on skills in preparing food through cooking and baking lessons.', icon: Sun },
 ]
 
 function PageHero({ eyebrow, title, description, photo, tone = 'default' }) {
@@ -112,41 +131,41 @@ function HomePage() {
         <img className="home-hero-image" src={photos.outreachTeam.src} alt={photos.outreachTeam.alt} />
         <div className="home-hero-shade" />
         <div className="home-hero-copy">
-          <span className="hero-kicker"><span /> CHRISTIAN HEALTH EDUCATION & COMMUNITY OUTREACH</span>
-          <h1>Sharing health.<br />Serving with <em>hope.</em></h1>
-          <p>We are a Bible-centered medical missionary ministry. We invite, train, and equip ordinary people to share practical health education and the hope of Jesus with their communities.</p>
+          <span className="hero-kicker"><span /> SEVENTH-DAY ADVENTIST · BIBLE-CENTRED · WHOLE-PERSON HEALTH</span>
+          <h1>More than an expo.<br />A life of <em>mission.</em></h1>
+          <p>Trumpeters Missionary Institution is a Seventh-day Adventist medical missionary ministry. We train for practical lifestyle health, grow through Bible-based learning and prayer, and take what we learn into the community.</p>
           <div className="hero-actions">
             <Link className="button button--green" to="/get-involved">Find your place <ArrowRight size={17} /></Link>
             <Link className="button button--glass" to="/about"><span className="play-icon"><ArrowRight size={13} /></span> Discover our mission</Link>
           </div>
-          <div className="home-hero-note"><UsersRound size={17} /> Whole-person care for body, mind, and spirit</div>
+          <div className="home-hero-note"><UsersRound size={17} /> Learn deeply. Live healthfully. Serve faithfully.</div>
         </div>
         <span className="home-hero-caption">CROSS ROADS · HEALTH OUTREACH · COMMUNITY CARE</span>
       </section>
 
       <section className="home-mission content-wrap">
         <div>
-          <span className="eyebrow">What is medical missionary work?</span>
-          <h2>Meet a need.<br /><em>Share the love of Jesus.</em></h2>
+          <span className="eyebrow">Not just an occasional health expo</span>
+          <h2>A way of life.<br /><em>A ministry of preparation.</em></h2>
         </div>
-        <p>It is practical Christian service that connects simple, trustworthy health education with kindness, prayer, and the gospel. At an expo, neighbours can receive free health checks and useful information in a welcoming space. In everyday life, it can be as simple as cooking, listening, praying, or helping someone find support.</p>
-        <Link className="text-link" to="/about">Understand our mission <ArrowRight size={16} /></Link>
+        <p>Our work is a connected pattern of lifestyle learning, practical skills, spiritual growth, and service. Training in nutrition, hydrotherapy, massage therapy, cooking, and baking prepares us to live and share health principles; Bible study and prayer keep Christ at the centre; expos and outreach let us serve our neighbours.</p>
+        <Link className="text-link" to="/about">What makes our ministry distinctive <ArrowRight size={16} /></Link>
       </section>
 
       <section className="home-practice-section">
         <div className="content-wrap">
-          <SectionTitle eyebrow="How the mission comes to life" title="Learn it. Live it. Share it." description="We care for the whole person—physical, mental, social, and spiritual wellbeing—while pointing to the loving example of Jesus." />
+          <SectionTitle eyebrow="A whole-person approach" title="Training for life. Preparation for service." description="Health education is not just something we present at an expo. It is something we learn, practise, and carry into everyday life and mission." />
           <div className="home-practice-grid">
-            <article><span>01</span><BookOpen size={23} /><h3>Learn practical health</h3><p>Explore the Eight Laws of Health, Bible studies, and simple habits that support wellbeing.</p><Link className="text-link" to="/learn">Explore learning <ArrowRight size={14} /></Link></article>
-            <article><span>02</span><Stethoscope size={23} /><h3>Serve your neighbours</h3><p>Help welcome people at a health expo, share information, and support trained health workers.</p><Link className="text-link" to="/events">See outreach <ArrowRight size={14} /></Link></article>
-            <article><span>03</span><HeartHandshake size={23} /><h3>Care with compassion</h3><p>Offer practical help, prayer, and encouragement with respect for each person’s choices.</p><Link className="text-link" to="/community">Find community <ArrowRight size={14} /></Link></article>
+            <article><span>01</span><Leaf size={23} /><h3>Study lifestyle health</h3><p>Learn nutrition, hydrotherapy, massage therapy, and the Eight Laws of Health.</p><Link className="text-link" to="/learn">Explore our training <ArrowRight size={14} /></Link></article>
+            <article><span>02</span><BookOpen size={23} /><h3>Grow in faith together</h3><p>Take part in twice-weekly online lessons, selected Sunday training, and all-night prayer.</p><Link className="text-link" to="/events">See our rhythm <ArrowRight size={14} /></Link></article>
+            <article><span>03</span><Stethoscope size={23} /><h3>Prepare for mission</h3><p>Join the annual one-week missionary camp, regular hikes, and hands-on community outreach.</p><Link className="text-link" to="/events">Explore mission activities <ArrowRight size={14} /></Link></article>
           </div>
         </div>
       </section>
 
       <section className="home-expo-section content-wrap">
         <img src="/images/cross-roads-health-expo.jpeg" alt="Cross Roads health expo flyer showing the outreach team and free health checks" loading="lazy" />
-        <div><span className="eyebrow">Real community outreach</span><h2>Health checks.<br /><em>Useful knowledge.<br />A warm welcome.</em></h2><p>The Cross Roads flyer invites community members to free health checks, including blood pressure, weight, lung capacity, glucose, and body fat. It’s a practical example of health education opening the door to connection and care.</p><Link className="text-link" to="/events">Learn about health expos <ArrowRight size={15} /></Link></div>
+        <div><span className="eyebrow">One expression of a larger mission</span><h2>Train throughout<br />the year.<em><br />Serve in the community.</em></h2><p>The Cross Roads flyer shows one expression of our work: free community health checks. Behind outreach is a wider life of preparation—practical training, shared study, prayer, fellowship, hikes, and missionary camp.</p><Link className="text-link" to="/events">See our training and activities <ArrowRight size={15} /></Link></div>
       </section>
 
       <section className="home-links content-wrap">
@@ -172,21 +191,22 @@ function AboutPage() {
     <>
       <PageHero
         eyebrow="About the ministry"
-        title={<>Faith that serves.<br /><em>Health that helps.</em></>}
-        description="Trumpeters Missionary Institution is a Bible-centered Christian ministry inviting, training, equipping, and mobilising people for medical missionary work: practical health education and compassionate gospel service in the community."
+        title={<>A distinct calling.<br /><em>A whole-life mission.</em></>}
+        description="We are a Seventh-day Adventist medical missionary ministry with an ongoing rhythm of lifestyle-health training, Bible study, prayer, fellowship, and community service."
         photo={photos.outreachTeam}
       />
       <section className="page-content content-wrap">
         <div className="about-introduction">
           <div className="about-introduction-copy">
-            <SectionTitle eyebrow="Who we are" title="A ministry of health, faith, and service" />
-            <p>Trumpeters Missionary Institution brings people together to care for the whole person—body, mind, and spirit. We believe health education can be a practical expression of Christian love: meet people with respect, share useful knowledge, and serve without pressure.</p>
-            <p>Our work includes health expos, teaching the Eight Laws of Health, Bible learning, prayer and fasting, fellowship, and practical support. We serve neighbours and families through community outreach, and help churches and volunteers prepare to serve.</p>
-            <p>You do not have to be a doctor or nurse to be part of the mission. Many roles are open to willing learners; clinical checks and health advice must be left to people with the appropriate training and authorization.</p>
+            <SectionTitle eyebrow="Who we are" title="More than an outreach team" />
+            <p>Trumpeters Missionary Institution is a Seventh-day Adventist medical missionary ministry. We believe medical missionary work is more than hosting a health expo or offering a single health lesson: it is a sustained way of learning, living, praying, and serving—caring for the whole person while pointing to Jesus.</p>
+            <p>Our lifestyle-health approach is practical. We provide training in nutrition, hydrotherapy, massage therapy, cooking, and baking, alongside the study of the Eight Laws of Health. We bring this learning into community health expos and other opportunities to serve.</p>
+            <p>This mission is also spiritual and communal. Our year includes twice-weekly online lessons, training on selected Sundays, regular hikes, all-night prayers, and a one-week missionary camp each year. These rhythms help us grow in knowledge, faith, discipline, fellowship, and readiness to serve.</p>
+            <p>People with different skills can take part. Practical support and outreach roles are open to learners; clinical procedures and individual health advice belong to people with the appropriate training and authorization.</p>
           </div>
           <div className="about-verse-card">
             <Cross size={23} />
-            <span className="eyebrow eyebrow--light">Our inspiration · John 10:10</span>
+            <span className="eyebrow eyebrow--light">Our faith · Scripture and Adventist heritage</span>
             <blockquote>“I am come that they might have life, and that they might have it more abundantly.”</blockquote>
             <span className="verse-translation">KING JAMES VERSION</span>
           </div>
@@ -195,8 +215,8 @@ function AboutPage() {
         <section className="mission-vision-section">
           <SectionTitle eyebrow="Our direction" title="A clear purpose. A shared vision." />
           <div className="mission-vision-grid">
-            <article><span className="mission-vision-label">OUR MISSION</span><h3>Invite. Train. Equip. Mobilise.</h3><p>To invite, train, equip, and mobilise medical missionaries to serve communities through health and gospel work.</p></article>
-            <article><span className="mission-vision-label">OUR VISION</span><h3>Health and hope in every community.</h3><p>To see people equipped to live healthier lives and to share the love of Jesus through compassionate, practical service.</p></article>
+          <article><span className="mission-vision-label">OUR MISSION</span><h3>Invite. Train. Equip. Mobilise.</h3><p>To invite, train, equip, and mobilise medical missionaries through Adventist lifestyle-health education, spiritual growth, and practical service to the community.</p></article>
+          <article><span className="mission-vision-label">OUR VISION</span><h3>A prepared people, serving whole communities.</h3><p>To grow a faithful, trained, and united community that lives and shares health principles and the hope of the gospel.</p></article>
           </div>
         </section>
 
@@ -213,13 +233,19 @@ function AboutPage() {
           <div className="bible-foundation-heading">
             <span className="eyebrow">Our Bible foundation</span>
             <h2>Faith is the heart<br /><em>of the mission.</em></h2>
-            <p>The Bible shapes both the message we share and the way we serve: with compassion, practical care, respect, and hope in Christ.</p>
+            <p>The Bible is the foundation of our faith. As a Seventh-day Adventist ministry, our health and missionary work is also informed by the writings of Ellen G. White, alongside our continued study of Scripture.</p>
           </div>
           <div className="scripture-list">
             <article><span>MATTHEW 9:35</span><p>Jesus taught, preached the gospel, and healed among the people.</p></article>
             <article><span>3 JOHN 1:2</span><p>A prayer for wellbeing in body as well as soul.</p></article>
             <article><span>GALATIANS 6:2</span><p>“Bear ye one another’s burdens.”</p></article>
           </div>
+        </section>
+
+        <section className="about-training-section">
+          <div className="about-training-heading"><span className="eyebrow">Practical lifestyle-health training</span><h2>Knowledge to practise.<br /><em>Skills to share.</em></h2><p>We offer practical instruction that connects health principles with everyday life and preparation for service.</p></div>
+          <div className="about-training-grid">{practicalTraining.map(({ title, detail, icon: Icon }) => <article key={title}><Icon size={20} /><h3>{title}</h3><p>{detail}</p></article>)}</div>
+          <p className="training-caution">Training is educational and does not replace professional medical care. Participants should practise only within their competence and applicable professional requirements.</p>
         </section>
 
         <div className="about-image-row">
@@ -321,11 +347,14 @@ function LearnPage() {
     <>
       <PageHero
         eyebrow="Learn & grow"
-        title={<>Simple truths for<br /><em>everyday wellbeing.</em></>}
-        description="Explore practical health principles, Bible studies, and learning resources for individuals, families, and outreach teams."
+        title={<>Learn the principles.<br /><em>Practise the skills.</em></>}
+        description="Explore our Adventist lifestyle-health approach: nutrition, hydrotherapy, massage therapy, cooking and baking, the Eight Laws of Health, and Bible learning."
         photo={photos.outreachTeam}
       />
       <section className="page-content content-wrap">
+        <SectionTitle eyebrow="Learn by doing" title="Training for everyday health and service" description="Our approach brings health principles into practical lessons and skills. Contact the team for current classes, instructors, and enrolment details." />
+        <div className="about-training-grid learn-training-grid">{practicalTraining.map(({ title, detail, icon: Icon }) => <article key={title}><Icon size={20} /><h3>{title}</h3><p>{detail}</p></article>)}</div>
+        <p className="training-caution">Courses provide education and training; they are not a substitute for diagnosis or treatment from a qualified health professional. Practical therapies should be taught and practised responsibly, within appropriate training and professional requirements.</p>
         <SectionTitle eyebrow="The eight laws of health" title="Whole-person wellness, one step at a time" description="A simple introduction to the eight principles. Start with one lesson and explore at your own pace." />
         <div className="laws-grid">{laws.map(({ title, detail, icon: Icon }, index) => <article className="law-card" key={title}><span className="law-card-number">0{index + 1}</span><Icon size={22} /><h3>{title}</h3><p>{detail}</p></article>)}</div>
         <aside className="health-education-note"><ShieldCheck size={19} /><p><strong>Health education, not individual medical advice.</strong> These general wellness principles do not diagnose or treat illness. Speak with a qualified health professional about personal symptoms, treatment, or changes to your care.</p></aside>
@@ -347,13 +376,17 @@ function EventsPage() {
     <>
       <PageHero
         eyebrow="Events & training"
-        title={<>Make time to gather,<br /><em>learn, and serve.</em></>}
-        description="Join a prayer rhythm, grow through shared study, or prepare to serve at a community health expo."
+        title={<>A year of training,<br /><em>prayer, and mission.</em></>}
+        description="Our rhythm extends beyond expos: online lessons twice a week, training on selected Sundays, regular hikes and all-night prayers, and a one-week missionary camp each year."
         photo={photos.outreachTeam}
       />
       <section className="page-content content-wrap">
-        <SectionTitle eyebrow="Gather with us" title="Regular ministry activities" description="These are activity types shared by the ministry. Contact the team to confirm dates, locations, and registration." />
+        <SectionTitle eyebrow="Our ministry rhythm" title="A steady pattern of learning and spiritual life" description="Here is the rhythm you can expect from the ministry. Exact dates, venues, class topics, and registration details are shared by the team." />
         <div className="event-page-list">{eventTypes.map(({ category, title, detail, icon: Icon }, index) => <article className="event-page-card" key={title}><span className="event-page-index">0{index + 1}</span><Icon size={22} /><span className="event-type">{category}</span><h3>{title}</h3><p>{detail}</p><a className="text-link" href={whatsappLink(`Hello! Please send me the upcoming dates and details for ${title}.`)} target="_blank" rel="noreferrer">Ask for dates & details <ArrowRight size={15} /></a></article>)}</div>
+        <section className="activities-overview">
+          <div><span className="eyebrow">Practical classes and preparation</span><h2>Training that connects<br /><em>belief with practice.</em></h2><p>Our training includes nutrition, hydrotherapy, massage therapy, cooking, and baking. Sunday sessions and online lessons help create a continuing path of learning, not just one-time event preparation.</p><Link className="text-link" to="/learn">Explore lifestyle-health training <ArrowRight size={15} /></Link></div>
+          <div className="activities-training-list">{practicalTraining.map(({ title, icon: Icon }) => <span key={title}><Icon size={17} />{title}</span>)}</div>
+        </section>
         <div className="event-image-row">
           <div><span className="eyebrow">Planning an outreach?</span><h2>Bring a health expo<br /><em>to your community.</em></h2><p>Ask us how to request a health expo, what volunteers need to prepare, and what training is available.</p><a className="button button--navy" href={whatsappLink('Hello! Our church/community is interested in hosting a health expo. Please share the request process and volunteer checklist.')} target="_blank" rel="noreferrer">Ask about hosting an expo <ArrowUpRight size={16} /></a></div>
           <figure className="outreach-flyer"><img src="/images/cross-roads-health-expo.jpeg" alt="The ministry’s Cross Roads health expo flyer, featuring the outreach team and free health checks" loading="lazy" /><figcaption>Health outreach flyer shared by the ministry.</figcaption></figure>
