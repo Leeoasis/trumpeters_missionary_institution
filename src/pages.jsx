@@ -97,6 +97,7 @@ function PageHero({ eyebrow, title, description, photo, tone = 'default' }) {
       {photo && (
         <figure className="page-hero-photo">
           <img src={photo.src} alt={photo.alt} />
+          <span className="page-hero-seal"><Leaf size={17} /> HEALTH <i /> HOPE <i /> SERVICE</span>
           <figcaption>{photo.alt}</figcaption>
         </figure>
       )}
